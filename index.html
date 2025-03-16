@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AntidoteHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <img src="logo.jpeg" alt="AntidoteHub Logo" class="logo-image" onclick="scrollToSection('home')">
+            <h1 class="logo-text" onclick="scrollToSection('home')">AntidoteHub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pharma-store">Pharma Store</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>ection -->
+    <section id="home" class="home">
+        <div class="home-container">
+            <!-- Left Content -->
+            <div class="home-content">
+                <h2 class="highlight">What are Antidotes?</h2>
+                <p class="info-text">
+                    <span class="bold">Antidotes</span> are <span class="highlight-text">life-saving substances</span>
+                    that neutralize poisons in the body.
+                    They work instantly to counteract the effects of toxic substances, preventing severe damage. Quick
+                    access to the right antidote
+                    can make the difference between life and death in emergencies.
+                </p>
+
+                <p class="key-highlight">
+                    Our platform <span class="highlight-text">connects users to the nearest available antidotes in
+                        real-time</span>, ensuring that help is
+                    always within reach.
+                </p>
+
+                <!-- Live Antidote Availability -->
+                <div class="availability-box">
+                    <h3 class="availability-title">Live Antidote Availability</h3>
+                    <p id="antidote-count" class="availability-text">Checking availability...</p>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" id="search-antidote" placeholder="Search for an antidote...">
+                    <button onclick="scrollToSection('services')">🔍 Search</button>
+                </div>
+
+                <!-- Emergency Contact Button -->
+                <button class="emergency-btn" onclick="scrollToSection('contact')">🚑 Emergency Help</button>
+
+
+                <!-- How It Works Section -->
+                <div class="info-box">
+                    <h3 class="info-title">How It Works?</h3>
+                    <p class="info-text"> Enter the antidote name to check its <span class="highlight-text">real-time
+                            availability</span> and location. Visit the nearest <span class="bold">pharmacy</span> to
+                        get it, or connect instantly with <span class="bold">medical professionals</span> in
+                        emergencies. </p>
+                </div>
+            </div>
+
+            <!-- Animated Image Grid -->
+            <div class="animated-grid">
+                <div class="grid-item"><img
+                        src="https://media.gettyimages.com/id/1300143933/photo/syringe-and-bottle-on-blue-background.jpg?s=612x612&w=gi&k=20&c=szeEMGExr-EJ5RTuAwgIDw7IIx_zJFXkVD2Weboo9lc="
+                        alt="Atropine"></div>
+                <div class="grid-item"><img
+                        src="https://www.shutterstock.com/image-illustration/antidote-drug-capsule-3d-rendering-260nw-1781478599.jpg"
+                        alt="Naloxone"></div>
+                <div class="grid-item"><img
+                        src="https://media.gettyimages.com/id/1287271384/photo/syringe-and-coronavirus-vaccine.jpg?s=612x612&w=gi&k=20&c=Sc7YoxUY4w0PaoXxr9btgO4VfR9tpt6E0zcWAo-wpj0="
+                        alt="Digoxin Antibody"></div>
+                <div class="grid-item"><img
+                        src="https://www.shutterstock.com/shutterstock/photos/2301413429/display_1500/stock-photo-conceptual-image-with-poison-and-antidote-over-black-background-d-illustration-2301413429.jpg"
+                        alt="Activated Charcoal"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h1>Find an Antidote</h1>
+        <div class="search-container">
+            <input type="text" id="antidoteName" placeholder="Enter antidote name">
+            <input type="text" id="location" placeholder="Enter location">
+            <button onclick="searchAntidote()">Search</button>
+        </div>
+
+        <!-- Results Display -->
+        <div id="searchResults" class="results-box">
+            <h2>Search Results</h2>
+            <p id="resultText">Enter details above and click Search</p>
+        </div>
+    </section>
+
+    <!-- Pharma Store Section -->
+    <section class="pharma-store" id="pharma-store">
+        <h1 class="login-header">Login to Access Services</h1>
+        <div class="form-container">
+            <form>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>New here? <button class="signup-btn" onclick="redirectToSignUp()">Sign Up</button></p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 style="color:aliceblue;">Contact Us</h2>
+        <div class="contact-box">
+            <div class="contact-item">
+                <img src="https://thumbs.dreamstime.com/b/email-icon-isolated-glassy-red-round-button-abstract-illustration-email-icon-glassy-red-round-button-105922331.jpg" alt="Email">
+                <h3>Email</h3>
+                <p>support@antidotehub.com</p>
+            </div>
+            <div class="contact-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbZv4QN7vaokhQDhO2NT9SbGfeEglD2qTT8JDPmHa1jbO89SkrZumzq3JskiTT2kG6cTY&usqp=CAU" alt="Phone">
+                <h3>Phone</h3>
+                <p>+123 456 7890</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.instagram.com/AntidoteHub" target="_blank">
+                    <img src="https://cdn-icons-png.freepik.com/256/15707/15707869.png?semt=ais_hybrid" alt="Instagram">
+                </a>
+                <a href="https://wa.me/AntidoteHub" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
+                </a>
+                <a href="https://twitter.com/AntidoteHub" target="_blank">
+                    <img src="https://t4.ftcdn.net/jpg/04/83/36/97/360_F_483369745_d9uQmdRaUGrZjuZC95rh10o64eYunK6c.jpg" alt="Twitter">
+                </a>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
