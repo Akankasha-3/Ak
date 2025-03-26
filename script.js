@@ -14,7 +14,6 @@ function scrollToSection(sectionId) {
         section.scrollIntoView({ behavior: "smooth" });
     }
 }
-// Function to search antidote from CSV file
 // Function to search antidote from CSV file and display results on the page
 function searchAntidote() {
     const antidoteName = document.getElementById("antidoteName").value.toLowerCase();
@@ -35,9 +34,12 @@ function searchAntidote() {
             let resultHTML = "";
 
             rows.forEach(row => {
-                const [name, availableLocation, quantity, storeName, storeAddress, phoneNumber] = row.map(item => item.trim().toLowerCase());
+                const [name, availableLocation, quantity, storeName, storeAddress, phoneNumber] = row.map(item => item.trim());
 
-                if (name === antidoteName && availableLocation === location) {
+                if (name.toLowerCase() === antidoteName && availableLocation.toLowerCase() === location) {
+                    // Google Maps Search Link
+                    const googleMapsLink = `https://www.google.com/maps/search/?q=${encodeURIComponent(storeAddress)}`;
+
                     resultHTML = `<div class="result-box">
                                     <h2>Antidote Found!</h2>
                                     <p><strong>Antidote:</strong> ${name}</p>
@@ -46,6 +48,7 @@ function searchAntidote() {
                                     <p><strong>Store Name:</strong> ${storeName}</p>
                                     <p><strong>Store Address:</strong> ${storeAddress}</p>
                                     <p><strong>Phone:</strong> <a href="tel:${phoneNumber}" class="phone-link">${phoneNumber}</a></p>
+                                    <p><strong>Find on Google Maps:</strong> <a href="${googleMapsLink}" target="_blank" class="map-link">View Location</a></p>
                                   </div>`;
                     found = true;
                 }
@@ -61,4 +64,3 @@ function searchAntidote() {
             console.error("Error fetching CSV:", error);
         });
 }
-
