@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AntidoteHub</title>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -24,7 +27,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>ection -->
+    </header>
     <section id="home" class="home">
         <div class="home-container">
             <!-- Left Content -->
@@ -102,31 +105,59 @@
             <h2>Search Results</h2>
             <p id="resultText">Enter details above and click Search</p>
         </div>
+        <div id="mapContainer" class="map-box"></div>
     </section>
 
-    <!-- Pharma Store Section -->
     <section class="pharma-store" id="pharma-store">
-        <h1 class="login-header">Login to Access Services</h1>
-        <div class="form-container">
-            <form>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <button type="submit">Login</button>
-            </form>
-            <p>New here? <button class="signup-btn" onclick="redirectToSignUp()">Sign Up</button></p>
+        <!-- Login Form -->
+        <div class="form-container" id="login-container">
+          <h2>Login</h2>
+          <form id="login-form">
+            <input type="email" id="login-email" placeholder="Email" required />
+            <input type="password" id="login-password" placeholder="Password" required />
+            <button type="submit">Login</button>
+          </form>
+          <p>New here? <button class="signup-btn" onclick="toggleSignUp()">Sign Up</button></p>
         </div>
-    </section>
+    
+        <!-- Signup Form -->
+        <div class="form-container hidden" id="signup-container">
+          <h2>Sign Up</h2>
+          <form id="signup-form">
+            <input type="text" id="ownerName" placeholder="Owner Name" required />
+            <input type="email" id="signupEmail" placeholder="Email" required />
+            <input type="password" id="signupPassword" placeholder="Password" required />
+            <input type="text" id="storeAddress" placeholder="Store Address" required />
+            <input type="text" id="licenseNumber" placeholder="License Number" required />
+            <input type="tel" id="phoneNumber" placeholder="Phone Number" required />
+            <input type="text" id="availableStock" placeholder="Available Stock (Optional)" />
+            <button type="submit">Sign Up</button>
+          </form>
+          <p>Already have an account? <button class="login-btn" onclick="toggleLogin()">Login</button></p>
+        </div>
+      </section>
+    
+      <!-- Dashboard -->
+      <section id="dashboard" class="hidden">
+        <h2>Welcome, <span id="owner-name-display"></span></h2>
+        <p><strong>Available Stock:</strong> <span id="stock-display"></span></p>
+        <button id="edit-stock">Edit Stock</button>
+        <button id="logout-btn">Logout</button>
+      </section>
 
+    
     <section id="contact" class="contact">
         <h2 style="color:aliceblue;">Contact Us</h2>
         <div class="contact-box">
             <div class="contact-item">
-                <img src="https://thumbs.dreamstime.com/b/email-icon-isolated-glassy-red-round-button-abstract-illustration-email-icon-glassy-red-round-button-105922331.jpg" alt="Email">
+                <img src="https://thumbs.dreamstime.com/b/email-icon-isolated-glassy-red-round-button-abstract-illustration-email-icon-glassy-red-round-button-105922331.jpg"
+                    alt="Email">
                 <h3>Email</h3>
                 <p>support@antidotehub.com</p>
             </div>
             <div class="contact-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbZv4QN7vaokhQDhO2NT9SbGfeEglD2qTT8JDPmHa1jbO89SkrZumzq3JskiTT2kG6cTY&usqp=CAU" alt="Phone">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbZv4QN7vaokhQDhO2NT9SbGfeEglD2qTT8JDPmHa1jbO89SkrZumzq3JskiTT2kG6cTY&usqp=CAU"
+                    alt="Phone">
                 <h3>Phone</h3>
                 <p>+123 456 7890</p>
             </div>
@@ -138,15 +169,18 @@
                     <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
                 </a>
                 <a href="https://twitter.com/AntidoteHub" target="_blank">
-                    <img src="https://t4.ftcdn.net/jpg/04/83/36/97/360_F_483369745_d9uQmdRaUGrZjuZC95rh10o64eYunK6c.jpg" alt="Twitter">
+                    <img src="https://t4.ftcdn.net/jpg/04/83/36/97/360_F_483369745_d9uQmdRaUGrZjuZC95rh10o64eYunK6c.jpg"
+                        alt="Twitter">
                 </a>
             </div>
-            
+
         </div>
     </section>
 
 
     <script src="script.js"></script>
+    
+
 </body>
 
 </html>
