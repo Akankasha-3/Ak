@@ -303,82 +303,119 @@ nav ul li a {
     color: #ff5733;
 }
 /* Pharma Store Section */
-.pharma-store {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh; /* Ensure full screen height */
-    background: linear-gradient(135deg, #28a745, #8dd660);
-    padding: 150px 0; /* Added sufficient spacing from header & footer */
-    color: white;
-}
-
-/* Login Header */
-.login-header {
-    font-size: 28px;
-    margin-bottom: 30px; /* Space between header and form */
-    color: #fff;
-}
-
-/* Login Form Container */
+/* Centered Form Box */
+/* 🔹 Form Container */
 .form-container {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 40px;
-    border-radius: 10px;
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
-    margin-bottom: 40px; /* Added spacing below the form */
-}
-
-.form-container:hover {
-    transform: scale(1.05);
-}
-
-/* Input Fields */
-input {
-    margin: 12px 0;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     text-align: center;
+    width: 320px;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* 🔹 Input Fields */
+.form-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
     font-size: 16px;
 }
 
-/* Buttons */
-button {
-    background: #ff5733;
+/* 🔹 Buttons */
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
     color: white;
-    padding: 12px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease-in-out, transform 0.2s;
     font-size: 16px;
-    width: 100%;
+}
+
+.form-container button:hover {
+    background: #218838;
+}
+
+/* 🔹 Signup & Login Toggle Buttons */
+.form-container p {
     margin-top: 10px;
 }
 
-button:hover {
-    background: #e04e1b;
-    transform: scale(1.1);
-}
-
-/* Sign Up Button */
-.signup-btn {
-    background: #007bff;
+.form-container button.signup-btn,
+.form-container button.login-btn {
+    background: none;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
     font-size: 14px;
-    padding: 8px 15px;
-    width: auto;
-    border-radius: 20px;
+    text-decoration: underline;
 }
 
-.signup-btn:hover {
-    background: #0056b3;
+.form-container button.signup-btn:hover,
+.form-container button.login-btn:hover {
+    color: #0056b3;
+}
+
+/* 🔹 Hide Elements */
+.hidden {
+    display: none;
+}
+
+/* 🔹 Dashboard Section */
+#dashboard {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 350px;
+}
+
+#dashboard h2 {
+    color: #333;
+}
+
+#dashboard p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#edit-stock,
+#logout-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#edit-stock {
+    background: #ffc107;
+    color: #333;
+}
+
+#edit-stock:hover {
+    background: #e0a800;
+}
+
+#logout-btn {
+    background: #dc3545;
+    color: white;
+}
+
+#logout-btn:hover {
+    background: #c82333;
 }
 
 /* Contact Section */
