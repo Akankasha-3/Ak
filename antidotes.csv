@@ -1,12 +1,59 @@
 Antidote Name,Location,Quantity,Store Name,Store Address,Phone Number
-Atropine,New York,5,HealthPlus Pharmacy,123 Main Street, +1 212-555-1234
-Naloxone,Los Angeles,10,Wellness Meds,456 Sunset Blvd, +1 310-555-5678
-Digoxin Antibody,Chicago,7,City Med Pharmacy,789 Lake Shore Dr, +1 312-555-9012
-Activated Charcoal,Houston,12,Quick Care Pharmacy,321 Houston Ave, +1 713-555-3456
-Ethanol,Boston,8,City Drug Store,222 Beacon St, +1 617-555-6789
-Flumazenil,San Francisco,6,Golden Gate Pharmacy,500 Bay St, +1 415-555-4321
-Pralidoxime,Dallas,4,Texas Meds,654 Elm St, +1 214-555-8765
-Methylene Blue,Seattle,9,Emerald Pharmacy,900 Pine St, +1 206-555-2345
-Vitamin K,Miami,11,Sunshine Pharma,111 Ocean Dr, +1 305-555-7890
-
-
+Acetylcysteine,San Antonio,9,Alamo Pharmacy,456 River Walk St,+1 210-555-1234  
+Amyl Nitrite,Portland,7,Rose City Meds,789 Hawthorne Blvd,+1 503-555-5678  
+Benzylpenicillin,Las Vegas,5,Neon Med Pharmacy,321 Strip Ave,+1 702-555-9012  
+Biperiden,Charlotte,8,Queen City Pharmacy,654 Tryon St,+1 704-555-3456  
+Calcium Disodium EDTA,Detroit,6,Motor City Meds,852 Woodward Ave,+1 313-555-6789  
+Calcium Gluconate,Indianapolis,10,Indy Care Pharmacy,741 Monument Cir,+1 317-555-4321  
+Cyanide Antidote Kit,Columbus,12,Buckeye Pharmacy,963 High St,+1 614-555-8765  
+Dantrolene,Fort Worth,4,Stockyard Meds,159 Cowtown Ln,+1 817-555-2345  
+Deferiprone,Memphis,9,Blues City Pharma,258 Beale St,+1 901-555-7890  
+Diazepam,El Paso,11,Border Health,753 Rio Grande Dr,+1 915-555-4567  
+DMSA,Washington D.C.,7,Capital Meds,654 Constitution Ave,+1 202-555-7891  
+Edrophonium,Tampa,5,Bay Area Pharmacy,357 Bayshore Blvd,+1 813-555-6543  
+Epinephrine,Honolulu,6,Aloha Meds,852 Waikiki Dr,+1 808-555-7412  
+Esmolol,Baltimore,8,Harbor Pharmacy,123 Inner Harbor Rd,+1 410-555-3214  
+Fab Antibody,Salt Lake City,9,Mountain Meds,321 Temple St,+1 801-555-9876  
+Folinic Acid,Nashville,3,Music City Pharmacy,741 Broadway,+1 615-555-2345  
+Glucagon,Milwaukee,6,Brew City Meds,258 Water St,+1 414-555-5678  
+Glyceryl Trinitrate,New Orleans,7,Bourbon Street Meds,369 French Quarter Ln,+1 504-555-6789  
+Hydralazine,Albuquerque,8,Desert Health,123 Sandia Rd,+1 505-555-4321  
+Hydroxyurea,Raleigh,5,Triangle Meds,741 Research Dr,+1 919-555-8765  
+Idarucizumab,Omaha,7,Heartland Pharmacy,852 Cornhusker Rd,+1 402-555-2345  
+Insulin,Virginia Beach,12,Shoreline Meds,369 Atlantic Ave,+1 757-555-7890  
+Iron Dextran,Minneapolis,10,Twin Cities Pharmacy,258 Nicollet Mall,+1 612-555-4567  
+Isoprenaline,Colorado Springs,4,Rocky Ridge Meds,357 Pike Peak Ave,+1 719-555-7891  
+Labetalol,Arlington,6,Nation’s Pharmacy,963 Pentagon Rd,+1 703-555-6543  
+Leucovorin,Boise,5,Idaho Meds,741 Capitol Blvd,+1 208-555-7412  
+Levocarnitine,Baton Rouge,7,Bayou Health,159 Gator Dr,+1 225-555-3214  
+Lidocaine,Birmingham,9,Steel City Meds,456 Vulcan Rd,+1 205-555-9876  
+Magnesium Sulfate,Richmond,8,Commonwealth Meds,963 Jefferson St,+1 804-555-2345  
+Methionine,Des Moines,6,Hawkeye Pharmacy,321 Capitol St,+1 515-555-5678  
+Methotrexate,Providence,5,Ocean State Meds,753 Narragansett Blvd,+1 401-555-6789  
+Nalmefene,Spokane,7,Evergreen Pharmacy,258 Riverfront Park Dr,+1 509-555-4321  
+Neostigmine,Montgomery,6,Capital City Meds,963 Dexter Ave,+1 334-555-8765  
+Octreotide,Augusta,8,Masters Meds,456 Golf Course Rd,+1 706-555-2345  
+Oxygen,Anchorage,10,Northern Pharmacy,159 Glacier Rd,+1 907-555-7890  
+Penicillamine,Louisville,9,Derby Meds,852 Churchill Downs Ave,+1 502-555-4567  
+Phentolamine,Little Rock,4,Diamond Meds,321 River Market Dr,+1 501-555-7891  
+Phytonadione,Jackson,6,Magnolia Meds,369 Capitol St,+1 601-555-6543  
+Pyridoxine,Charleston,5,Palmetto Pharmacy,741 Rainbow Row,+1 843-555-7412  
+Rifampin,Burlington,7,Green Mountain Meds,258 Maple St,+1 802-555-3214  
+Sodium Bicarbonate,Cheyenne,8,Frontier Pharmacy,159 Rodeo Dr,+1 307-555-9876  
+Sodium Nitrite,Bismarck,6,Great Plains Meds,852 Dakota St,+1 701-555-2345  
+Sodium Polystyrene Sulfonate,Manchester,5,Granite Meds,963 Elm St,+1 603-555-5678  
+Streptokinase,Columbia,7,Capital Meds,456 Gervais St,+1 803-555-6789  
+Succimer,Fargo,6,Red River Pharmacy,258 Prairie Rd,+1 701-555-4321  
+Thiamine,Sioux Falls,8,Dakota Meds,753 Falls Park Dr,+1 605-555-8765  
+Tocopherol,New Haven,9,Elm City Pharmacy,321 Chapel St,+1 203-555-2345  
+Tranexamic Acid,Bridgeport,4,Harbor Meds,369 Soundview Rd,+1 203-555-7890  
+Tropisetron,St. Paul,6,Twin Cities Meds,159 Cathedral St,+1 651-555-4567  
+Urea,Lexington,5,Bluegrass Pharmacy,963 Keeneland Ave,+1 859-555-7891  
+Valproic Acid,Topeka,7,Sunflower Meds,456 State Capitol Rd,+1 785-555-6543  
+Vasopressin,Fort Wayne,8,Hoosier Meds,852 Anthony Blvd,+1 260-555-7412  
+Vitamin B6,Akron,6,Rubber City Pharmacy,369 Goodyear Ave,+1 330-555-3214  
+Vitamin C,Dayton,5,Wright Meds,741 Air Force Dr,+1 937-555-9876  
+Vitamin D,Shreveport,7,Red River Meds,258 Bayou Blvd,+1 318-555-2345  
+Vitamin E,Chattanooga,8,Scenic City Pharmacy,753 Lookout Mt Rd,+1 423-555-5678  
+Warfarin Antidote,Syracuse,6,Empire Meds,963 University Ave,+1 315-555-6789  
+Zinc Sulfate,Knoxville,5,Volunteer Meds,159 Rocky Top Rd,+1 865-555-4321
